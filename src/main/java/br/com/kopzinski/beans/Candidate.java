@@ -1,11 +1,16 @@
 package br.com.kopzinski.beans;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Candidate {
 	private Place place;
 	private List<User> voters;
 
+	public Candidate() {
+		voters = new ArrayList<>();
+	}
+	
 	public Place getPlace() {
 		return place;
 	}

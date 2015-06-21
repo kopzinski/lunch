@@ -36,6 +36,14 @@ public class Place {
 		this.address = address;
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		
+		Place other = (Place) obj;
+		
+		return (this.id == other.getId());
+
+	}
 	
 
 }
